@@ -19,6 +19,7 @@ namespace DDCombatSystem
         string tempString;
         string monstName = "placeholder";
         string weapon = "weapon placeholder";
+        int weaponDamage = 25;
 
         CombatMain run1;
         public Form1()
@@ -107,19 +108,19 @@ namespace DDCombatSystem
                 MainTextBox.AppendText("You strike true and do ");
                 if (buttonResult == 1)
                 {
-                    int damage = CombatMain.Roll(20, 30);
+                    int damage = CombatMain.damageRoll(1, weaponDamage);
                     MainTextBox.AppendText(damage + " damage.\n");
                     run1.ChangeHealth(1, false, damage);
                 }
                 else if (buttonResult == 2)
                 {
-                    int damage = CombatMain.Roll(15, 25);
+                    int damage = CombatMain.damageRoll(2, weaponDamage);
                     MainTextBox.AppendText(damage + " damage.\n");
                     run1.ChangeHealth(1, false, damage);
                 }
                 else if(buttonResult == 3)
                 {
-                    int damage = CombatMain.Roll(5, 15);
+                    int damage = CombatMain.damageRoll(3, weaponDamage);
                     MainTextBox.AppendText(damage + " damage.\n");
                     run1.ChangeHealth(1, false, damage);
                 }

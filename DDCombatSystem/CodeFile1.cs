@@ -9,13 +9,14 @@ namespace DDCombatSystem
 {
     public class CombatMain
     {
-        
+
         String[] monsterNames = { "Goblin", "Zombie", "Dark Elf", "Orc" };
 
         public string mobName;
 
         int playerHealth = 100;
         int mobHealth = 100;
+        int weaponDamage = 25;
 
         public CombatMain(int difficulty, Form1 form1)
         {
@@ -27,15 +28,15 @@ namespace DDCombatSystem
 
             myForm.MainTextBox.AppendText("You encountered a " + mobName + ". . . \n");
             myForm.pictureBoxStart.Visible = false;
-            if(mobName == "Orc")
+            if (mobName == "Orc")
             {
                 myForm.pictureBoxOrc.Visible = true;
             }
-            else if(mobName == "Zombie")
+            else if (mobName == "Zombie")
             {
                 myForm.pictureBoxZombie.Visible = true;
             }
-            else if(mobName == "Goblin")
+            else if (mobName == "Goblin")
             {
                 myForm.pictureBoxGoblin.Visible = true;
             }
@@ -53,14 +54,14 @@ namespace DDCombatSystem
             if (die < 1)
             {
                 myForm.MainTextBox.AppendText(output1);
-                
+
                 attackMethod(myForm);
 
             }
             else
             {
                 myForm.MainTextBox.AppendText(output2);
-                
+
                 defendMethod(myForm);
             }
 
@@ -80,7 +81,7 @@ namespace DDCombatSystem
         public void defendMethod(Form1 myForm)
         {
             int res = Roll(0, 9);
-            if(res < 3)
+            if (res < 3)
             {
                 myForm.Update();
                 Thread.Sleep(1000);
@@ -88,9 +89,9 @@ namespace DDCombatSystem
                 myForm.Update();
                 Thread.Sleep(1000);
                 int die = Roll(0, 9);
-                if(die < 3)
+                if (die < 3)
                 {
-                    int damage = Roll(20, 30);
+                    int damage = damageRoll(1, weaponDamage);
                     myForm.MainTextBox.AppendText("The blow lands and does " + damage + " to you.\n");
                     ChangeHealth(0, false, damage);
                 }
@@ -105,7 +106,7 @@ namespace DDCombatSystem
                     ChangeHealth(1, false, damage);
                 }
             }
-            else if(res >= 3 && res <= 6)
+            else if (res >= 3 && res <= 6)
             {
                 myForm.Update();
                 Thread.Sleep(1000);
@@ -115,7 +116,7 @@ namespace DDCombatSystem
                 int die = Roll(0, 9);
                 if (die < 3)
                 {
-                    int damage = Roll(10, 20);
+                    int damage = damageRoll(2, weaponDamage);
                     myForm.MainTextBox.AppendText("The blow lands and does " + damage + " to you.\n");
                     ChangeHealth(0, false, damage);
                 }
@@ -140,7 +141,7 @@ namespace DDCombatSystem
                 int die = Roll(0, 9);
                 if (die < 3)
                 {
-                    int damage = Roll(5, 15);
+                    int damage = damageRoll(3, weaponDamage);
                     myForm.MainTextBox.AppendText("The blow lands and does " + damage + " to you.\n");
                     ChangeHealth(0, false, damage);
                 }
@@ -169,8 +170,25 @@ namespace DDCombatSystem
 
         public void loot()
         {
-
+            //Randomize 2 items from item list
         }
+
+        public static int damageRoll(int attack, int weaponDmg)
+        { 
+            if(attack == 1)
+            {
+                return Roll(weaponDmg - 5, weaponDmg + 5);
+            }
+            else if(attack == 2)
+            {
+                return Roll(weaponDmg - 10, weaponDmg);
+            }
+            else
+            {
+                return Roll(weaponDmg - 15, weaponDmg - 10);
+            }
+        }
+
 
         public static int Roll(int min, int max)
         {

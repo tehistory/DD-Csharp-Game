@@ -56,9 +56,9 @@ namespace DDCombatSystem
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(25, 869);
+            this.button1.Location = new System.Drawing.Point(13, 1012);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 77);
+            this.button1.Size = new System.Drawing.Size(190, 82);
             this.button1.TabIndex = 0;
             this.button1.Text = "Main Attack";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -69,9 +69,9 @@ namespace DDCombatSystem
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button2.Location = new System.Drawing.Point(240, 869);
+            this.button2.Location = new System.Drawing.Point(209, 1013);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(188, 77);
+            this.button2.Size = new System.Drawing.Size(188, 81);
             this.button2.TabIndex = 1;
             this.button2.Text = "Alternate Attack";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -82,9 +82,9 @@ namespace DDCombatSystem
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button3.Location = new System.Drawing.Point(449, 869);
+            this.button3.Location = new System.Drawing.Point(403, 1012);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(177, 78);
+            this.button3.Size = new System.Drawing.Size(177, 82);
             this.button3.TabIndex = 2;
             this.button3.Text = "Off Hand Attack";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -96,9 +96,9 @@ namespace DDCombatSystem
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button4.Location = new System.Drawing.Point(646, 870);
+            this.button4.Location = new System.Drawing.Point(586, 1012);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 77);
+            this.button4.Size = new System.Drawing.Size(186, 81);
             this.button4.TabIndex = 3;
             this.button4.Text = "Retreat";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -108,17 +108,17 @@ namespace DDCombatSystem
             // MainTextBox
             // 
             this.MainTextBox.Font = new System.Drawing.Font("Monotype Corsiva", 20F);
-            this.MainTextBox.Location = new System.Drawing.Point(34, 543);
+            this.MainTextBox.Location = new System.Drawing.Point(12, 543);
             this.MainTextBox.Name = "MainTextBox";
             this.MainTextBox.ReadOnly = true;
-            this.MainTextBox.Size = new System.Drawing.Size(797, 292);
+            this.MainTextBox.Size = new System.Drawing.Size(759, 447);
             this.MainTextBox.TabIndex = 4;
             this.MainTextBox.Text = "";
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Monotype Corsiva", 40F);
-            this.button5.Location = new System.Drawing.Point(342, 12);
+            this.button5.Location = new System.Drawing.Point(294, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(209, 94);
             this.button5.TabIndex = 6;
@@ -130,9 +130,9 @@ namespace DDCombatSystem
             // 
             this.pictureBoxStart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxStart.BackgroundImage")));
             this.pictureBoxStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxStart.Location = new System.Drawing.Point(2, 1);
+            this.pictureBoxStart.Location = new System.Drawing.Point(-9, 1);
             this.pictureBoxStart.Name = "pictureBoxStart";
-            this.pictureBoxStart.Size = new System.Drawing.Size(885, 960);
+            this.pictureBoxStart.Size = new System.Drawing.Size(796, 1110);
             this.pictureBoxStart.TabIndex = 7;
             this.pictureBoxStart.TabStop = false;
             // 
@@ -140,9 +140,9 @@ namespace DDCombatSystem
             // 
             this.pictureBoxOrc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxOrc.BackgroundImage")));
             this.pictureBoxOrc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxOrc.Location = new System.Drawing.Point(34, 10);
+            this.pictureBoxOrc.Location = new System.Drawing.Point(12, 10);
             this.pictureBoxOrc.Name = "pictureBoxOrc";
-            this.pictureBoxOrc.Size = new System.Drawing.Size(796, 526);
+            this.pictureBoxOrc.Size = new System.Drawing.Size(759, 526);
             this.pictureBoxOrc.TabIndex = 8;
             this.pictureBoxOrc.TabStop = false;
             this.pictureBoxOrc.Visible = false;
@@ -184,7 +184,7 @@ namespace DDCombatSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 963);
+            this.ClientSize = new System.Drawing.Size(783, 1106);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBoxStart);
             this.Controls.Add(this.MainTextBox);
