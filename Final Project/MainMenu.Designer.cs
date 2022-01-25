@@ -50,6 +50,7 @@ namespace DnDGame
             this.CharacterBuilder.TabIndex = 0;
             this.CharacterBuilder.Text = "Build Character";
             this.CharacterBuilder.UseVisualStyleBackColor = false;
+            this.CharacterBuilder.Click += new System.EventHandler(this.CharacterBuilder_Click);
             // 
             // Crafting
             // 
@@ -76,6 +77,7 @@ namespace DnDGame
             this.Gathering.TabIndex = 2;
             this.Gathering.Text = "Gathering";
             this.Gathering.UseVisualStyleBackColor = false;
+            this.Gathering.Click += new System.EventHandler(this.Gathering_Click);
             // 
             // Looting
             // 
@@ -89,6 +91,7 @@ namespace DnDGame
             this.Looting.TabIndex = 3;
             this.Looting.Text = "Looting";
             this.Looting.UseVisualStyleBackColor = false;
+            this.Looting.Click += new System.EventHandler(this.Looting_Click);
             // 
             // Enchanting
             // 
