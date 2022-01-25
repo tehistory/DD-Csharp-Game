@@ -33,6 +33,7 @@
     <RootNamespace>DnDGame</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -97,7 +98,9 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\Desert.png" />
@@ -105,12 +108,10 @@
     <Content Include="img\Grasslands.jpg" />
     <Content Include="img\Marsh.jpg" />
     <Content Include="img\Mountain.jpg" />
-    <Content Include="orcFight.jpg" />
-    <Content Include="Resources\StartImage1.jpg" />
-    <Content Include="StartImage.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".vs\DnDGame\v16\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
