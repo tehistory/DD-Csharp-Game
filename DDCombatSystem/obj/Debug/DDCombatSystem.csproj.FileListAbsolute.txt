@@ -9,3 +9,14 @@ D:\MSSA\DDCombatSystem\obj\Debug\DDCombatSystem.exe
 D:\MSSA\DDCombatSystem\obj\Debug\DDCombatSystem.pdb
 D:\MSSA\DDCombatSystem\obj\Debug\DDCombatSystem.csproj.AssemblyReference.cache
 D:\MSSA\DDCombatSystem\obj\Debug\DDCombatSystem.MainMenu.resources
+D:\DD-Csharp-Game\DDCombatSystem\bin\Debug\DDCombatSystem.exe.config
+D:\DD-Csharp-Game\DDCombatSystem\bin\Debug\DDCombatSystem.exe
+D:\DD-Csharp-Game\DDCombatSystem\bin\Debug\DDCombatSystem.pdb
+D:\DD-Csharp-Game\DDCombatSystem\obj\Debug\DDCombatSystem.csproj.AssemblyReference.cache
+D:\DD-Csharp-Game\DDCombatSystem\obj\Debug\DDCombatSystem.Form1.resources
+D:\DD-Csharp-Game\DDCombatSystem\obj\Debug\DDCombatSystem.MainMenu.resources
+D:\DD-Csharp-Game\DDCombatSystem\obj\Debug\DDCombatSystem.Properties.Resources.resources
+D:\DD-Csharp-Game\DDCombatSystem\obj\Debug\DDCombatSystem.csproj.GenerateResource.cache
+D:\DD-Csharp-Game\DDCombatSystem\obj\Debug\DDCombatSystem.csproj.CoreCompileInputs.cache
+D:\DD-Csharp-Game\DDCombatSystem\obj\Debug\DDCombatSystem.exe
+D:\DD-Csharp-Game\DDCombatSystem\obj\Debug\DDCombatSystem.pdb
