@@ -1,0 +1,14 @@
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\bin\Debug\GatheringApp.exe.config
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\bin\Debug\GatheringApp.exe
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\bin\Debug\GatheringApp.pdb
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.csproj.AssemblyReference.cache
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.Form1.resources
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.Properties.Resources.resources
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.csproj.GenerateResource.cache
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.csproj.CoreCompileInputs.cache
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.exe
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.pdb
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\bin\Debug\GatheringApp.exe.manifest
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\bin\Debug\GatheringApp.application
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.exe.manifest
+C:\Users\cchap\source\repos\GatheringApp\GatheringApp\obj\Debug\GatheringApp.application
