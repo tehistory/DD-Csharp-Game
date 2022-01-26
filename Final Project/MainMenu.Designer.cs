@@ -42,7 +42,7 @@ namespace DnDGame
             this.CharacterBuilder.BackColor = System.Drawing.Color.Transparent;
             this.CharacterBuilder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CharacterBuilder.BackgroundImage")));
             this.CharacterBuilder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CharacterBuilder.Font = new System.Drawing.Font("Monotype Corsiva", 50.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharacterBuilder.Font = new System.Drawing.Font("Monotype Corsiva", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.CharacterBuilder.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.CharacterBuilder.Location = new System.Drawing.Point(12, 12);
             this.CharacterBuilder.Name = "CharacterBuilder";
@@ -56,7 +56,7 @@ namespace DnDGame
             // 
             this.Crafting.BackColor = System.Drawing.Color.Transparent;
             this.Crafting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Crafting.Font = new System.Drawing.Font("Monotype Corsiva", 50.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Crafting.Font = new System.Drawing.Font("Monotype Corsiva", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Crafting.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Crafting.Location = new System.Drawing.Point(12, 149);
             this.Crafting.Name = "Crafting";
@@ -64,12 +64,13 @@ namespace DnDGame
             this.Crafting.TabIndex = 1;
             this.Crafting.Text = "Crafting";
             this.Crafting.UseVisualStyleBackColor = false;
+            this.Crafting.Click += new System.EventHandler(this.Crafting_Click);
             // 
             // Gathering
             // 
             this.Gathering.BackColor = System.Drawing.Color.Transparent;
             this.Gathering.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Gathering.Font = new System.Drawing.Font("Monotype Corsiva", 50.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Gathering.Font = new System.Drawing.Font("Monotype Corsiva", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Gathering.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Gathering.Location = new System.Drawing.Point(12, 294);
             this.Gathering.Name = "Gathering";
@@ -83,7 +84,7 @@ namespace DnDGame
             // 
             this.Looting.BackColor = System.Drawing.Color.Transparent;
             this.Looting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Looting.Font = new System.Drawing.Font("Monotype Corsiva", 50.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Looting.Font = new System.Drawing.Font("Monotype Corsiva", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Looting.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Looting.Location = new System.Drawing.Point(12, 432);
             this.Looting.Name = "Looting";
@@ -97,13 +98,13 @@ namespace DnDGame
             // 
             this.Enchanting.BackColor = System.Drawing.Color.Transparent;
             this.Enchanting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Enchanting.Font = new System.Drawing.Font("Monotype Corsiva", 50.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Enchanting.Font = new System.Drawing.Font("Monotype Corsiva", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Enchanting.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Enchanting.Location = new System.Drawing.Point(12, 574);
             this.Enchanting.Name = "Enchanting";
             this.Enchanting.Size = new System.Drawing.Size(438, 126);
             this.Enchanting.TabIndex = 4;
-            this.Enchanting.Text = "Inventory";
+            this.Enchanting.Text = "Enchanting";
             this.Enchanting.UseVisualStyleBackColor = false;
             // 
             // MainMenu

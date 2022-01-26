@@ -14,6 +14,12 @@ namespace DnDGame
         [STAThread]
         static void Main()
         {
+            WFRpg.LoadWeapons();
+            WFRpg.LoadInventoryWeapons();
+            WFRpg.LoadInventoryReagents();
+            WFRpg.LoadWeaponCraftRequirements();
+            WFRpg.LoadGold();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainMenu());
