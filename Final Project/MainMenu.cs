@@ -41,5 +41,12 @@ namespace DnDGame
             CombatForm form = new CombatForm();
             form.ShowDialog();
         }
+
+        private void Crafting_Click(object sender, EventArgs e)
+        {
+
+            CombatForm form = new CombatForm();
+            form.ShowDialog();
+        }
     }
 }

@@ -68,6 +68,18 @@
     <Compile Include="CombatForm.Designer.cs">
       <DependentUpon>CombatForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CraftingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CraftingForm.Designer.cs">
+      <DependentUpon>CraftingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CraftRoll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CraftRoll.Designer.cs">
+      <DependentUpon>CraftRoll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gathering.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +96,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
     <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Reagent.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponCraftRequirement.cs" />
+    <Compile Include="WFRpg.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CharactergenForm.resx">
