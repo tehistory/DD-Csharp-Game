@@ -168,9 +168,25 @@ namespace DnDGame
             }
         }
 
-        public void loot()
+        public void loot(CombatForm myForm)
         {
             //Randomize 2 items from item list
+            int gainedGold = Roll(25, 100);
+            myForm.MainTextBox.AppendText("You gained " + gainedGold + " gold!\n");
+            WFRpg.gold = WFRpg.gold + gainedGold;
+            myForm.Update();
+
+            int itemNum = Roll(0, 12); //12 had to be hard coded as there is no built in length function, this will need to be changed if the list length changes.
+
+            WFRpg.inventoryReagentsList[itemNum].Quantity = WFRpg.inventoryReagentsList[itemNum].Quantity + 1;
+            myForm.MainTextBox.AppendText("You gained a " + WFRpg.inventoryReagentsList[itemNum].Grade + WFRpg.inventoryReagentsList[itemNum].Name + "!\n");
+            myForm.Update();
+
+            itemNum = Roll(0, 12); //12 had to be hard coded as there is no built in length function, this will need to be changed if the list length changes.
+
+            WFRpg.inventoryReagentsList[itemNum].Quantity = WFRpg.inventoryReagentsList[itemNum].Quantity + 1;
+            myForm.MainTextBox.AppendText("You gained a " + WFRpg.inventoryReagentsList[itemNum].Grade + WFRpg.inventoryReagentsList[itemNum].Name + "!\n");
+            myForm.Update();
         }
 
         public static int damageRoll(int attack, int weaponDmg)
@@ -243,7 +259,7 @@ namespace DnDGame
                 myForm.MainTextBox.AppendText("The " + mobName + " falls still . . .\n");
                 myForm.MainTextBox.AppendText("YOU ARE VICTORIOUS!\n");
                 myForm.Update();
-                loot();
+                loot(myForm);
             }
             else
             {

@@ -13,12 +13,12 @@ namespace DnDGame
         public static List<Weapon> inventoryWeaponsList = new List<Weapon>();
         public static List<Reagent> inventoryReagentsList = new List<Reagent>();
         public static List<WeaponCraftRequirement> weaponCraftRequiremenList = new List<WeaponCraftRequirement>();
-        public static string gold;
+        public static int gold;
 
         public static void LoadWeapons()
         {
             // This will read file from csv
-            StreamReader reader = new StreamReader(File.OpenRead(@"C:\Users\brian\Desktop\WinFormRPG\SwordList.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\CraftRequirements\SwordList.csv"));
 
             while (!reader.EndOfStream)
             {
@@ -37,7 +37,7 @@ namespace DnDGame
         public static void LoadInventoryWeapons()
         {
             // This will read file from csv
-            StreamReader reader = new StreamReader(File.OpenRead(@"C:\Users\brian\Desktop\WinFormRPG\Inventory\Inventory_weapon.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\Inventory\Inventory_weapon.csv"));
 
             while (!reader.EndOfStream)
             {
@@ -56,7 +56,7 @@ namespace DnDGame
         public static void LoadInventoryReagents()
         {
             // This will read file from csv
-            StreamReader reader = new StreamReader(File.OpenRead(@"C:\Users\brian\Desktop\WinFormRPG\Inventory\Inventory_reagent.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\Inventory\Inventory_reagent.csv"));
 
             while (!reader.EndOfStream)
             {
@@ -75,7 +75,7 @@ namespace DnDGame
         public static void LoadWeaponCraftRequirements()
         {
             // This will read file from csv
-            StreamReader reader = new StreamReader(File.OpenRead(@"C:\Users\brian\Desktop\WinFormRPG\CraftRequirements\SwordCraftRequirements.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\CraftRequirements\SwordCraftRequirements.csv"));
 
             while (!reader.EndOfStream)
             {
@@ -107,13 +107,13 @@ namespace DnDGame
 
         public static void LoadGold()
         {
-            StreamReader reader = new StreamReader(File.OpenRead(@"C:\Users\brian\Desktop\WinFormRPG\Inventory\Inventory_gold.txt"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\Inventory\Inventory_gold.txt"));
 
             string line = reader.ReadLine();
 
             if (!String.IsNullOrWhiteSpace(line))
             {
-                gold = line;
+                gold = Convert.ToInt32(line);
             }
             reader.Close();
         }
