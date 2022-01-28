@@ -168,9 +168,25 @@ namespace DnDGame
             }
         }
 
-        public void loot()
+        public void loot(CombatForm myForm)
         {
             //Randomize 2 items from item list
+            int gainedGold = Roll(25, 100);
+            myForm.MainTextBox.AppendText("You gained " + gainedGold + " gold!\n");
+            WFRpg.gold = WFRpg.gold + gainedGold;
+            myForm.Update();
+
+            int itemNum = Roll(0, WFRpg.inventoryReagentsList.Count); 
+
+            WFRpg.inventoryReagentsList[itemNum].Quantity = WFRpg.inventoryReagentsList[itemNum].Quantity + 1;
+            myForm.MainTextBox.AppendText("You gained a " + WFRpg.inventoryReagentsList[itemNum].Grade + WFRpg.inventoryReagentsList[itemNum].Name + "!\n");
+            myForm.Update();
+
+            itemNum = Roll(0, WFRpg.inventoryReagentsList.Count); 
+
+            WFRpg.inventoryReagentsList[itemNum].Quantity = WFRpg.inventoryReagentsList[itemNum].Quantity + 1;
+            myForm.MainTextBox.AppendText("You gained a " + WFRpg.inventoryReagentsList[itemNum].Grade + WFRpg.inventoryReagentsList[itemNum].Name + "!\n");
+            myForm.Update();
         }
 
         public static int damageRoll(int attack, int weaponDmg)
@@ -243,7 +259,10 @@ namespace DnDGame
                 myForm.MainTextBox.AppendText("The " + mobName + " falls still . . .\n");
                 myForm.MainTextBox.AppendText("YOU ARE VICTORIOUS!\n");
                 myForm.Update();
-                loot();
+                loot(myForm);
+                myForm.button4.Text = "Leave";
+                myForm.button4.Visible = true;
+                myForm.Update();
             }
             else
             {

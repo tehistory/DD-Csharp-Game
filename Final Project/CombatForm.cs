@@ -25,6 +25,10 @@ namespace DnDGame
         public CombatForm()
         {
             InitializeComponent();
+            for (int i = 0; i < WFRpg.inventoryWeaponsList.Count; i++)
+            {
+                listBox1.Items.Add(WFRpg.inventoryWeaponsList[i].Grade + " " + WFRpg.inventoryWeaponsList[i].Name);
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -94,7 +98,7 @@ namespace DnDGame
             button4.Visible = false;
             this.Update();
 
-
+            this.Close();
             
         }
 
@@ -148,5 +152,9 @@ namespace DnDGame
             }
         }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            button5.Visible = true;
+        }
     }
 }
