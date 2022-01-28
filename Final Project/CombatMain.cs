@@ -260,6 +260,9 @@ namespace DnDGame
                 myForm.MainTextBox.AppendText("YOU ARE VICTORIOUS!\n");
                 myForm.Update();
                 loot(myForm);
+                myForm.button4.Text = "Leave";
+                myForm.button4.Visible = true;
+                myForm.Update();
             }
             else
             {

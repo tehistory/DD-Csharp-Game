@@ -44,6 +44,7 @@ namespace DnDGame
             this.pictureBoxGoblin = new System.Windows.Forms.PictureBox();
             this.pictureBoxZombie = new System.Windows.Forms.PictureBox();
             this.pictureBoxElf = new System.Windows.Forms.PictureBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoblin)).BeginInit();
@@ -125,6 +126,7 @@ namespace DnDGame
             this.button5.Text = "Start";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Visible = false;
             // 
             // pictureBoxStart
             // 
@@ -180,11 +182,23 @@ namespace DnDGame
             this.pictureBoxElf.TabStop = false;
             this.pictureBoxElf.Visible = false;
             // 
-            // Form1
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Monotype Corsiva", 40F);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 64;
+            this.listBox1.Location = new System.Drawing.Point(77, 214);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(624, 452);
+            this.listBox1.TabIndex = 12;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // CombatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 1106);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBoxStart);
             this.Controls.Add(this.MainTextBox);
@@ -196,7 +210,7 @@ namespace DnDGame
             this.Controls.Add(this.pictureBoxGoblin);
             this.Controls.Add(this.pictureBoxZombie);
             this.Controls.Add(this.pictureBoxElf);
-            this.Name = "Form1";
+            this.Name = "CombatForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrc)).EndInit();
@@ -222,6 +236,8 @@ namespace DnDGame
         public System.Windows.Forms.PictureBox pictureBoxGoblin;
         public System.Windows.Forms.PictureBox pictureBoxZombie;
         public System.Windows.Forms.PictureBox pictureBoxElf;
+        private System.Windows.Forms.ListBox listBox1;
+
     }
 }
 

@@ -34,7 +34,7 @@ namespace DnDGame
                 listInventoryReagents.Items.Add(inventoryDisplayFormat);
             }
 
-            lblGold.Text = WFRpg.gold;
+            lblGold.Text = Convert.ToString(WFRpg.gold);
         }
         private void listInventoryWeapons_SelectedIndexChanged(object sender, EventArgs e)
         {
