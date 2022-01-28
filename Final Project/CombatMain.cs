@@ -176,13 +176,13 @@ namespace DnDGame
             WFRpg.gold = WFRpg.gold + gainedGold;
             myForm.Update();
 
-            int itemNum = Roll(0, 12); //12 had to be hard coded as there is no built in length function, this will need to be changed if the list length changes.
+            int itemNum = Roll(0, WFRpg.inventoryReagentsList.Count); 
 
             WFRpg.inventoryReagentsList[itemNum].Quantity = WFRpg.inventoryReagentsList[itemNum].Quantity + 1;
             myForm.MainTextBox.AppendText("You gained a " + WFRpg.inventoryReagentsList[itemNum].Grade + WFRpg.inventoryReagentsList[itemNum].Name + "!\n");
             myForm.Update();
 
-            itemNum = Roll(0, 12); //12 had to be hard coded as there is no built in length function, this will need to be changed if the list length changes.
+            itemNum = Roll(0, WFRpg.inventoryReagentsList.Count); 
 
             WFRpg.inventoryReagentsList[itemNum].Quantity = WFRpg.inventoryReagentsList[itemNum].Quantity + 1;
             myForm.MainTextBox.AppendText("You gained a " + WFRpg.inventoryReagentsList[itemNum].Grade + WFRpg.inventoryReagentsList[itemNum].Name + "!\n");
