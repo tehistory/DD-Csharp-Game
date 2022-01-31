@@ -34,7 +34,7 @@ namespace DnDGame
             this.Crafting = new System.Windows.Forms.Button();
             this.Gathering = new System.Windows.Forms.Button();
             this.Looting = new System.Windows.Forms.Button();
-            this.Enchanting = new System.Windows.Forms.Button();
+            this.SaveGame = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CharacterBuilder
@@ -94,18 +94,19 @@ namespace DnDGame
             this.Looting.UseVisualStyleBackColor = false;
             this.Looting.Click += new System.EventHandler(this.Looting_Click);
             // 
-            // Enchanting
+            // SaveGame
             // 
-            this.Enchanting.BackColor = System.Drawing.Color.Transparent;
-            this.Enchanting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Enchanting.Font = new System.Drawing.Font("Monotype Corsiva", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.Enchanting.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Enchanting.Location = new System.Drawing.Point(12, 574);
-            this.Enchanting.Name = "Enchanting";
-            this.Enchanting.Size = new System.Drawing.Size(438, 126);
-            this.Enchanting.TabIndex = 4;
-            this.Enchanting.Text = "Enchanting";
-            this.Enchanting.UseVisualStyleBackColor = false;
+            this.SaveGame.BackColor = System.Drawing.Color.Transparent;
+            this.SaveGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SaveGame.Font = new System.Drawing.Font("Monotype Corsiva", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.SaveGame.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.SaveGame.Location = new System.Drawing.Point(12, 574);
+            this.SaveGame.Name = "SaveGame";
+            this.SaveGame.Size = new System.Drawing.Size(438, 126);
+            this.SaveGame.TabIndex = 4;
+            this.SaveGame.Text = "Save Game";
+            this.SaveGame.UseVisualStyleBackColor = false;
+            this.SaveGame.Click += new System.EventHandler(this.SaveGame_Click);
             // 
             // MainMenu
             // 
@@ -114,7 +115,7 @@ namespace DnDGame
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(782, 1107);
-            this.Controls.Add(this.Enchanting);
+            this.Controls.Add(this.SaveGame);
             this.Controls.Add(this.Looting);
             this.Controls.Add(this.Gathering);
             this.Controls.Add(this.Crafting);
@@ -131,6 +132,6 @@ namespace DnDGame
         private System.Windows.Forms.Button Crafting;
         private System.Windows.Forms.Button Gathering;
         private System.Windows.Forms.Button Looting;
-        private System.Windows.Forms.Button Enchanting;
+        private System.Windows.Forms.Button SaveGame;
     }
 }

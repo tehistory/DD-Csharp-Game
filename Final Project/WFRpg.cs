@@ -117,5 +117,40 @@ namespace DnDGame
             }
             reader.Close();
         }
+
+        public static void SaveGame()
+        {
+            File.Delete(@"..\Inventory\Inventory_weapon.csv");
+            StreamWriter wWriter = new StreamWriter(File.OpenWrite(@"..\Inventory\Inventory_weapon.csv"));
+            
+            for(int i = 0; i < inventoryWeaponsList.Count; i++)
+            {
+                //string name, string grade, int damage, string type, double value, int quantity
+                wWriter.WriteLine(inventoryWeaponsList[i].Name + "," + inventoryWeaponsList[i].Grade + "," + inventoryWeaponsList[i].Damage + "," + inventoryWeaponsList[i].Type + "," + inventoryWeaponsList[i].Value + "," + inventoryWeaponsList[i].Quantity);
+            }
+
+            wWriter.Flush();
+            wWriter.Close();
+
+            File.Delete(@"..\Inventory\Inventory_reagent.csv");
+            StreamWriter iWriter = new StreamWriter(File.OpenWrite(@"..\Inventory\Inventory_reagent.csv"));
+
+            for (int i = 0; i < inventoryReagentsList.Count; i++)
+            {
+                //string name, string grade, string type, double value, int quantity
+                iWriter.WriteLine(inventoryReagentsList[i].Name + "," + inventoryReagentsList[i].Grade + "," + inventoryReagentsList[i].Type + "," + inventoryReagentsList[i].Value + "," + inventoryReagentsList[i].Quantity);
+            }
+
+            iWriter.Flush();
+            iWriter.Close();
+
+            File.Delete(@"..\Inventory\Inventory_gold.txt");
+            StreamWriter gWriter = new StreamWriter(File.OpenWrite(@"..\Inventory\Inventory_gold.txt"));
+
+            gWriter.WriteLine(gold);
+
+            gWriter.Flush();
+            gWriter.Close();
+        }
     }
 }

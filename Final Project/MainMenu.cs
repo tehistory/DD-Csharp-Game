@@ -21,6 +21,7 @@ namespace DnDGame
         private void CharacterBuilder_Click(object sender, EventArgs e)
         {
             //this.Close();
+            this.Visible = false;
 
             CharactergenForm form = new CharactergenForm();
             //indowInteropHelper wih = new WindowInteropHelper(this);
@@ -31,22 +32,34 @@ namespace DnDGame
 
         private void Gathering_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
+
             GatheringForm form = new GatheringForm();
             form.ShowDialog();
         }
 
         private void Looting_Click(object sender, EventArgs e)
         {
-            
+            this.Visible = false;
+
             CombatForm form = new CombatForm();
             form.ShowDialog();
         }
 
         private void Crafting_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
 
             CombatForm form = new CombatForm();
             form.ShowDialog();
+        }
+
+        private void SaveGame_Click(object sender, EventArgs e)
+        {
+            WFRpg.SaveGame();
+
+            MessageBox.Show("Save Complete", "Success", MessageBoxButtons.OK);
+
         }
     }
 }
