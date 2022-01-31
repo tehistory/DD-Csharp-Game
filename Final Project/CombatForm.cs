@@ -25,6 +25,8 @@ namespace DnDGame
         public CombatForm()
         {
             InitializeComponent();
+            
+            //adds current weapon inventory to list
             for (int i = 0; i < WFRpg.inventoryWeaponsList.Count; i++)
             {
                 listBox1.Items.Add(WFRpg.inventoryWeaponsList[i].Grade + " " + WFRpg.inventoryWeaponsList[i].Name);
