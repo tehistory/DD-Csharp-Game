@@ -125,8 +125,8 @@ namespace DnDGame
             this.button5.TabIndex = 6;
             this.button5.Text = "Start";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.Visible = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBoxStart
             // 
@@ -212,6 +212,7 @@ namespace DnDGame
             this.Controls.Add(this.pictureBoxElf);
             this.Name = "CombatForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.CombatForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoblin)).EndInit();
@@ -236,7 +237,7 @@ namespace DnDGame
         public System.Windows.Forms.PictureBox pictureBoxGoblin;
         public System.Windows.Forms.PictureBox pictureBoxZombie;
         public System.Windows.Forms.PictureBox pictureBoxElf;
-        private System.Windows.Forms.ListBox listBox1;
+        public System.Windows.Forms.ListBox listBox1;
 
     }
 }

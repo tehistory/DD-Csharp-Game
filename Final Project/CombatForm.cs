@@ -22,10 +22,13 @@ namespace DnDGame
         int weaponDamage = 25;
 
         CombatMain run1;
-        public CombatForm()
+        MainMenu menu;
+        public CombatForm(MainMenu main)
         {
             InitializeComponent();
-            
+
+            menu = main;
+
             //adds current weapon inventory to list
             for (int i = 0; i < WFRpg.inventoryWeaponsList.Count; i++)
             {
@@ -35,11 +38,13 @@ namespace DnDGame
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Start button
             button1.Visible = false;
             button2.Visible = false;
             button3.Visible = false;
             button4.Visible = false;
             button5.Visible = false;
+            listBox1.Visible = false;
             run1 = new CombatMain(1, this);
             monstName = run1.mobName;
         }
@@ -99,6 +104,7 @@ namespace DnDGame
             button3.Visible = false;
             button4.Visible = false;
             this.Update();
+            menu.Visible = true;
 
             this.Close();
             
@@ -157,6 +163,13 @@ namespace DnDGame
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             button5.Visible = true;
+        }
+
+        private void CombatForm_Load(object sender, EventArgs e)
+        {
+            menu.Visible = true;
+
+            this.Close();
         }
     }
 }
