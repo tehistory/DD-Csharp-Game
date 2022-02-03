@@ -16,7 +16,7 @@ namespace DnDGame
 
         int playerHealth = 100;
         int mobHealth = 100;
-        int weaponDamage = 25;
+        int weaponDamage;
 
         public CombatMain(int difficulty, CombatForm form1)
         {
@@ -25,6 +25,14 @@ namespace DnDGame
             mobName = monsterNames[rng.Next(0, 3)];
 
             CombatForm myForm = form1;
+
+            foreach (Weapon item in WFRpg.inventoryWeaponsList)
+            {
+                if (item.Name.ToString() == myForm.listBox1.SelectedItem.ToString())
+                {
+                    weaponDamage = item.Damage;
+                }
+            }
 
             myForm.MainTextBox.AppendText("You encountered a " + mobName + ". . . \n");
             myForm.pictureBoxStart.Visible = false;

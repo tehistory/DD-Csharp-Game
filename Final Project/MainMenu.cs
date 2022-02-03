@@ -42,7 +42,7 @@ namespace DnDGame
         {
             this.Visible = false;
 
-            CombatForm form = new CombatForm();
+            CombatForm form = new CombatForm(this);
             form.ShowDialog();
         }
 
