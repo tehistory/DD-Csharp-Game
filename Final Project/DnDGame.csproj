@@ -1,0 +1,139 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{5715E564-E43B-4ABE-A669-9BFB04A762F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>DnDGame</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\DDCombatSystem\v16\.suo" />
+    <None Include=".vs\Final Project\v16\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="App.config" />
+    <None Include="GatheringApp_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CharacterClass.cs" />
+    <Compile Include="CharacterGenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharactergenFOrm.Designer.cs">
+      <DependentUpon>CharacterGenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CombatMain.cs" />
+    <Compile Include="CombatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CombatForm.Designer.cs">
+      <DependentUpon>CombatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CraftingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CraftingForm.Designer.cs">
+      <DependentUpon>CraftingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CraftRoll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CraftRoll.Designer.cs">
+      <DependentUpon>CraftRoll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gathering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gathering.Designer.cs">
+      <DependentUpon>Gathering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Reagent.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponCraftRequirement.cs" />
+    <Compile Include="WFRpg.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CharactergenForm.resx">
+      <DependentUpon>CharacterGenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CombatForm.resx">
+      <DependentUpon>CombatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gathering.resx">
+      <DependentUpon>Gathering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\Desert.png" />
+    <Content Include="img\Forest.jpg" />
+    <Content Include="img\Grasslands.jpg" />
+    <Content Include="img\Marsh.jpg" />
+    <Content Include="img\Mountain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\DnDGame\v16\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
