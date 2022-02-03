@@ -219,10 +219,10 @@ namespace DnDGame
             bool hasEssence = false;
             bool hasLegendary = false;
 
-            string metal = "";
-            string wood = "";
-            string essence = "";
-            string legendary = "";
+            string metal = "placeholder";
+            string wood = "placeholder";
+            string essence = "placeholder";
+            string legendary = "placeholder";
 
             for (int i = 0; i < listCraftableItems.Items.Count; i++)
             {
@@ -240,20 +240,20 @@ namespace DnDGame
                                 requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].MetalReq);
                                 requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].WoodReq);
                             }
-                        }
-                        else if (WFRpg.weaponsList[i].Grade == "Epic")
-                        {
-                            requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].MetalReq);
-                            requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].WoodReq);
-                            requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].EssenceReq);
-                        }
-                        else if (WFRpg.weaponsList[i].Grade == "Legendary")
-                        {
-                            requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].MetalReq);
-                            requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].WoodReq);
-                            requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].EssenceReq);
-                            requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].LegendaryReq);
-                        }
+                            else if (WFRpg.weaponsList[i].Grade == "Epic")
+                            {
+                                requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].MetalReq);
+                                requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].WoodReq);
+                                requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].EssenceReq);
+                            }
+                            else if (WFRpg.weaponsList[i].Grade == "Legendary")
+                            {
+                                requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].MetalReq);
+                                requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].WoodReq);
+                                requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].EssenceReq);
+                                requiredReagents.Add(WFRpg.weaponCraftRequiremenList[j].LegendaryReq);
+                            }
+                        }                        
                     }
                 }
             }
@@ -340,9 +340,9 @@ namespace DnDGame
 
                 gold = gold - requiredGold;
 
-                File.WriteAllText(@"C:\Users\brian\Desktop\WinFormRPG\Inventory\Inventory_gold.txt", gold.ToString());
+                File.WriteAllText(@"..\..\..\Inventory\Inventory_gold.txt", gold.ToString());
 
-                StreamReader reader = new StreamReader(File.OpenRead(@"C:\Users\brian\Desktop\WinFormRPG\Inventory\Inventory_gold.txt"));
+                StreamReader reader = new StreamReader(File.OpenRead(@"..\..\..\Inventory\Inventory_gold.txt"));
 
                 string line = reader.ReadLine();
 
@@ -366,21 +366,51 @@ namespace DnDGame
                         }
                         else
                         {
-                            string nl = "\r\n";
                             WFRpg.inventoryReagentsList[i].Quantity--;
-
-                            // Update textbox
-                            txtInventoryItemDescription.Text = "" + nl + nl + nl;
-                            txtInventoryItemDescription.AppendText(WFRpg.inventoryReagentsList[i].Name + nl + nl);
-                            txtInventoryItemDescription.AppendText("Type: " + WFRpg.inventoryReagentsList[i].Type + nl);
-                            txtInventoryItemDescription.AppendText("Grade: " + WFRpg.inventoryReagentsList[i].Grade + nl);
-                            txtInventoryItemDescription.AppendText("Value: " + WFRpg.inventoryReagentsList[i].Value.ToString() + " Gold" + nl);
-                            txtInventoryItemDescription.AppendText("Quantity: " + WFRpg.inventoryReagentsList[i].Quantity.ToString() + nl);
+                        }
+                    }
+                    if (wood == WFRpg.inventoryReagentsList[i].Name)
+                    {
+                        if (WFRpg.inventoryReagentsList[i].Quantity == 1)
+                        {
+                            WFRpg.inventoryReagentsList.Remove(WFRpg.inventoryReagentsList[i]);
+                        }
+                        else
+                        {
+                            WFRpg.inventoryReagentsList[i].Quantity--;
+                        }
+                    }
+                    if (essence == WFRpg.inventoryReagentsList[i].Name)
+                    {
+                        if (WFRpg.inventoryReagentsList[i].Quantity == 1)
+                        {
+                            WFRpg.inventoryReagentsList.Remove(WFRpg.inventoryReagentsList[i]);
+                        }
+                        else
+                        {
+                            WFRpg.inventoryReagentsList[i].Quantity--;
+                        }
+                    }
+                    if (legendary == WFRpg.inventoryReagentsList[i].Name)
+                    {
+                        if (WFRpg.inventoryReagentsList[i].Quantity == 1)
+                        {
+                            WFRpg.inventoryReagentsList.Remove(WFRpg.inventoryReagentsList[i]);
+                        }
+                        else
+                        {                            
+                            WFRpg.inventoryReagentsList[i].Quantity--;
                         }
                     }
                 }
-
-
+                //string nl = "\r\n";
+                //// Update textbox
+                //txtInventoryItemDescription.Text = "" + nl + nl + nl;
+                //txtInventoryItemDescription.AppendText(WFRpg.inventoryReagentsList[i].Name + nl + nl);
+                //txtInventoryItemDescription.AppendText("Type: " + WFRpg.inventoryReagentsList[i].Type + nl);
+                //txtInventoryItemDescription.AppendText("Grade: " + WFRpg.inventoryReagentsList[i].Grade + nl);
+                //txtInventoryItemDescription.AppendText("Value: " + WFRpg.inventoryReagentsList[i].Value.ToString() + " Gold" + nl);
+                //txtInventoryItemDescription.AppendText("Quantity: " + WFRpg.inventoryReagentsList[i].Quantity.ToString() + nl);
             }
 
             return hasAll;
