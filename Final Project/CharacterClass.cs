@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
 
 /// <summary>
 ///     This defines any character.
@@ -251,5 +255,38 @@ namespace DnDGame
             Stealth = Modifier(Dexterity);
             Survival = Modifier(Wisdom);
         }
+
+        public Character(string name, string background, string profession, int hitpoints, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, int acrobatics, int animalHandling, int arcana, int athletics, int deception, int history, int insight, int intimidation, int medicine, int nature, int perception, int performance, int persuasion, int religon, int slightOfHand, int stealth, int survival)
+            
+        {
+            this.CharName = name;
+            this.Background = background;
+            this.Profession = profession;
+            this.HitPoints = hitpoints;
+            this.Strength = strength;
+            this.Dexterity = dexterity;
+            this.Constitution = constitution;
+            this.Intelligence = intelligence;
+            this.Wisdom = wisdom;
+            this.Charisma = charisma;
+            this.Acrobatics = acrobatics;
+            this.AnimalHandling = animalHandling;
+            this.Arcana = arcana;
+            this.Athletics = athletics;
+            this.Deception = deception;
+            this.History = history;
+            this.Insight = insight;
+            this.Intimidation = intimidation;
+            this.Medicine = medicine;
+            this.Nature = nature;
+            this.Perception = perception;
+            this.Performance = performance;
+            this.Persuasion = persuasion;
+            this.Religon = religon;
+            this.SlightOfHand = slightOfHand;
+            this.Stealth = stealth;
+            this.Survival = survival;
+        }
+
     }
 }
