@@ -67,10 +67,10 @@ namespace DnDGame
             // 
             // rerollButton
             // 
-            this.rerollButton.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rerollButton.Location = new System.Drawing.Point(336, 564);
+            this.rerollButton.Font = new System.Drawing.Font("Arial Narrow", 18F);
+            this.rerollButton.Location = new System.Drawing.Point(288, 489);
             this.rerollButton.Name = "rerollButton";
-            this.rerollButton.Size = new System.Drawing.Size(85, 75);
+            this.rerollButton.Size = new System.Drawing.Size(73, 65);
             this.rerollButton.TabIndex = 0;
             this.rerollButton.Text = "Reroll";
             this.rerollButton.UseVisualStyleBackColor = true;
@@ -79,18 +79,18 @@ namespace DnDGame
             // strTitleLabel
             // 
             this.strTitleLabel.AutoSize = true;
-            this.strTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.strTitleLabel.Location = new System.Drawing.Point(12, 9);
+            this.strTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.strTitleLabel.Location = new System.Drawing.Point(10, 8);
             this.strTitleLabel.Name = "strTitleLabel";
-            this.strTitleLabel.Size = new System.Drawing.Size(105, 32);
+            this.strTitleLabel.Size = new System.Drawing.Size(106, 32);
             this.strTitleLabel.TabIndex = 1;
             this.strTitleLabel.Text = "Strength";
             // 
             // strIntLabel
             // 
             this.strIntLabel.AutoSize = true;
-            this.strIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.strIntLabel.Location = new System.Drawing.Point(3, 9);
+            this.strIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F);
+            this.strIntLabel.Location = new System.Drawing.Point(3, 8);
             this.strIntLabel.Name = "strIntLabel";
             this.strIntLabel.Size = new System.Drawing.Size(0, 43);
             this.strIntLabel.TabIndex = 2;
@@ -98,8 +98,8 @@ namespace DnDGame
             // strModLabel
             // 
             this.strModLabel.AutoSize = true;
-            this.strModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.strModLabel.Location = new System.Drawing.Point(64, 5);
+            this.strModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F);
+            this.strModLabel.Location = new System.Drawing.Point(55, 4);
             this.strModLabel.Name = "strModLabel";
             this.strModLabel.Size = new System.Drawing.Size(0, 47);
             this.strModLabel.TabIndex = 3;
@@ -107,8 +107,8 @@ namespace DnDGame
             // dexModLabel
             // 
             this.dexModLabel.AutoSize = true;
-            this.dexModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dexModLabel.Location = new System.Drawing.Point(64, 6);
+            this.dexModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F);
+            this.dexModLabel.Location = new System.Drawing.Point(55, 5);
             this.dexModLabel.Name = "dexModLabel";
             this.dexModLabel.Size = new System.Drawing.Size(0, 47);
             this.dexModLabel.TabIndex = 6;
@@ -116,8 +116,8 @@ namespace DnDGame
             // dexIntLabel
             // 
             this.dexIntLabel.AutoSize = true;
-            this.dexIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dexIntLabel.Location = new System.Drawing.Point(3, 10);
+            this.dexIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F);
+            this.dexIntLabel.Location = new System.Drawing.Point(3, 9);
             this.dexIntLabel.Name = "dexIntLabel";
             this.dexIntLabel.Size = new System.Drawing.Size(0, 43);
             this.dexIntLabel.TabIndex = 5;
@@ -125,18 +125,18 @@ namespace DnDGame
             // dexTitleLabel
             // 
             this.dexTitleLabel.AutoSize = true;
-            this.dexTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dexTitleLabel.Location = new System.Drawing.Point(12, 111);
+            this.dexTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.dexTitleLabel.Location = new System.Drawing.Point(10, 96);
             this.dexTitleLabel.Name = "dexTitleLabel";
-            this.dexTitleLabel.Size = new System.Drawing.Size(110, 32);
+            this.dexTitleLabel.Size = new System.Drawing.Size(111, 32);
             this.dexTitleLabel.TabIndex = 4;
             this.dexTitleLabel.Text = "Dexterity";
             // 
             // wisModLabel
             // 
             this.wisModLabel.AutoSize = true;
-            this.wisModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wisModLabel.Location = new System.Drawing.Point(64, 7);
+            this.wisModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F);
+            this.wisModLabel.Location = new System.Drawing.Point(55, 6);
             this.wisModLabel.Name = "wisModLabel";
             this.wisModLabel.Size = new System.Drawing.Size(0, 47);
             this.wisModLabel.TabIndex = 9;
@@ -144,8 +144,8 @@ namespace DnDGame
             // wisIntLabel
             // 
             this.wisIntLabel.AutoSize = true;
-            this.wisIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wisIntLabel.Location = new System.Drawing.Point(3, 11);
+            this.wisIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F);
+            this.wisIntLabel.Location = new System.Drawing.Point(3, 10);
             this.wisIntLabel.Name = "wisIntLabel";
             this.wisIntLabel.Size = new System.Drawing.Size(0, 43);
             this.wisIntLabel.TabIndex = 8;
@@ -153,18 +153,18 @@ namespace DnDGame
             // wisTitleLabel
             // 
             this.wisTitleLabel.AutoSize = true;
-            this.wisTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wisTitleLabel.Location = new System.Drawing.Point(9, 417);
+            this.wisTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.wisTitleLabel.Location = new System.Drawing.Point(8, 361);
             this.wisTitleLabel.Name = "wisTitleLabel";
-            this.wisTitleLabel.Size = new System.Drawing.Size(101, 32);
+            this.wisTitleLabel.Size = new System.Drawing.Size(102, 32);
             this.wisTitleLabel.TabIndex = 7;
             this.wisTitleLabel.Text = "Wisdom";
             // 
             // conModLabel
             // 
             this.conModLabel.AutoSize = true;
-            this.conModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.conModLabel.Location = new System.Drawing.Point(64, 6);
+            this.conModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F);
+            this.conModLabel.Location = new System.Drawing.Point(55, 5);
             this.conModLabel.Name = "conModLabel";
             this.conModLabel.Size = new System.Drawing.Size(0, 47);
             this.conModLabel.TabIndex = 12;
@@ -172,8 +172,8 @@ namespace DnDGame
             // conIntLabel
             // 
             this.conIntLabel.AutoSize = true;
-            this.conIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.conIntLabel.Location = new System.Drawing.Point(3, 10);
+            this.conIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F);
+            this.conIntLabel.Location = new System.Drawing.Point(3, 9);
             this.conIntLabel.Name = "conIntLabel";
             this.conIntLabel.Size = new System.Drawing.Size(0, 43);
             this.conIntLabel.TabIndex = 11;
@@ -181,18 +181,18 @@ namespace DnDGame
             // conTitleLabel
             // 
             this.conTitleLabel.AutoSize = true;
-            this.conTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.conTitleLabel.Location = new System.Drawing.Point(9, 213);
+            this.conTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.conTitleLabel.Location = new System.Drawing.Point(8, 185);
             this.conTitleLabel.Name = "conTitleLabel";
-            this.conTitleLabel.Size = new System.Drawing.Size(159, 32);
+            this.conTitleLabel.Size = new System.Drawing.Size(160, 32);
             this.conTitleLabel.TabIndex = 10;
             this.conTitleLabel.Text = "Constitutuion";
             // 
             // chaModLabel
             // 
             this.chaModLabel.AutoSize = true;
-            this.chaModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chaModLabel.Location = new System.Drawing.Point(64, 5);
+            this.chaModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F);
+            this.chaModLabel.Location = new System.Drawing.Point(55, 4);
             this.chaModLabel.Name = "chaModLabel";
             this.chaModLabel.Size = new System.Drawing.Size(0, 47);
             this.chaModLabel.TabIndex = 15;
@@ -200,8 +200,8 @@ namespace DnDGame
             // chaIntLabel
             // 
             this.chaIntLabel.AutoSize = true;
-            this.chaIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chaIntLabel.Location = new System.Drawing.Point(3, 9);
+            this.chaIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F);
+            this.chaIntLabel.Location = new System.Drawing.Point(3, 8);
             this.chaIntLabel.Name = "chaIntLabel";
             this.chaIntLabel.Size = new System.Drawing.Size(0, 43);
             this.chaIntLabel.TabIndex = 14;
@@ -209,18 +209,18 @@ namespace DnDGame
             // chaTitleLabel
             // 
             this.chaTitleLabel.AutoSize = true;
-            this.chaTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chaTitleLabel.Location = new System.Drawing.Point(9, 519);
+            this.chaTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.chaTitleLabel.Location = new System.Drawing.Point(8, 450);
             this.chaTitleLabel.Name = "chaTitleLabel";
-            this.chaTitleLabel.Size = new System.Drawing.Size(112, 32);
+            this.chaTitleLabel.Size = new System.Drawing.Size(113, 32);
             this.chaTitleLabel.TabIndex = 13;
             this.chaTitleLabel.Text = "Charisma";
             // 
             // intModLabel
             // 
             this.intModLabel.AutoSize = true;
-            this.intModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.intModLabel.Location = new System.Drawing.Point(64, 5);
+            this.intModLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F);
+            this.intModLabel.Location = new System.Drawing.Point(55, 4);
             this.intModLabel.Name = "intModLabel";
             this.intModLabel.Size = new System.Drawing.Size(0, 47);
             this.intModLabel.TabIndex = 18;
@@ -228,8 +228,8 @@ namespace DnDGame
             // intIntLabel
             // 
             this.intIntLabel.AutoSize = true;
-            this.intIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.intIntLabel.Location = new System.Drawing.Point(3, 9);
+            this.intIntLabel.Font = new System.Drawing.Font("Trebuchet MS", 26.25F);
+            this.intIntLabel.Location = new System.Drawing.Point(3, 8);
             this.intIntLabel.Name = "intIntLabel";
             this.intIntLabel.Size = new System.Drawing.Size(0, 43);
             this.intIntLabel.TabIndex = 17;
@@ -237,19 +237,19 @@ namespace DnDGame
             // intTitleLabel
             // 
             this.intTitleLabel.AutoSize = true;
-            this.intTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.intTitleLabel.Location = new System.Drawing.Point(9, 315);
+            this.intTitleLabel.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.intTitleLabel.Location = new System.Drawing.Point(8, 273);
             this.intTitleLabel.Name = "intTitleLabel";
-            this.intTitleLabel.Size = new System.Drawing.Size(138, 32);
+            this.intTitleLabel.Size = new System.Drawing.Size(139, 32);
             this.intTitleLabel.TabIndex = 16;
             this.intTitleLabel.Text = "Intelligence";
             // 
             // clearButton
             // 
-            this.clearButton.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clearButton.Location = new System.Drawing.Point(245, 564);
+            this.clearButton.Font = new System.Drawing.Font("Arial Narrow", 18F);
+            this.clearButton.Location = new System.Drawing.Point(210, 489);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(85, 75);
+            this.clearButton.Size = new System.Drawing.Size(73, 65);
             this.clearButton.TabIndex = 19;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
@@ -257,83 +257,85 @@ namespace DnDGame
             // 
             // loadButton
             // 
-            this.loadButton.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.loadButton.Location = new System.Drawing.Point(427, 564);
+            this.loadButton.Font = new System.Drawing.Font("Arial Narrow", 18F);
+            this.loadButton.Location = new System.Drawing.Point(366, 489);
             this.loadButton.Name = "loadButton";
-            this.loadButton.Size = new System.Drawing.Size(85, 75);
+            this.loadButton.Size = new System.Drawing.Size(73, 65);
             this.loadButton.TabIndex = 20;
             this.loadButton.Text = "Load";
             this.loadButton.UseVisualStyleBackColor = true;
+            this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
             // saveButton
             // 
-            this.saveButton.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.saveButton.Location = new System.Drawing.Point(518, 564);
+            this.saveButton.Font = new System.Drawing.Font("Arial Narrow", 18F);
+            this.saveButton.Location = new System.Drawing.Point(444, 489);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(85, 75);
+            this.saveButton.Size = new System.Drawing.Size(73, 65);
             this.saveButton.TabIndex = 21;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // strLabalPanel
             // 
             this.strLabalPanel.Controls.Add(this.strIntLabel);
             this.strLabalPanel.Controls.Add(this.strModLabel);
-            this.strLabalPanel.Location = new System.Drawing.Point(9, 44);
+            this.strLabalPanel.Location = new System.Drawing.Point(8, 38);
             this.strLabalPanel.Name = "strLabalPanel";
-            this.strLabalPanel.Size = new System.Drawing.Size(108, 64);
+            this.strLabalPanel.Size = new System.Drawing.Size(93, 55);
             this.strLabalPanel.TabIndex = 23;
             // 
             // dexLabalPanel
             // 
             this.dexLabalPanel.Controls.Add(this.dexIntLabel);
             this.dexLabalPanel.Controls.Add(this.dexModLabel);
-            this.dexLabalPanel.Location = new System.Drawing.Point(9, 146);
+            this.dexLabalPanel.Location = new System.Drawing.Point(8, 127);
             this.dexLabalPanel.Name = "dexLabalPanel";
-            this.dexLabalPanel.Size = new System.Drawing.Size(108, 64);
+            this.dexLabalPanel.Size = new System.Drawing.Size(93, 55);
             this.dexLabalPanel.TabIndex = 24;
             // 
             // conLabalPanel
             // 
             this.conLabalPanel.Controls.Add(this.conIntLabel);
             this.conLabalPanel.Controls.Add(this.conModLabel);
-            this.conLabalPanel.Location = new System.Drawing.Point(9, 248);
+            this.conLabalPanel.Location = new System.Drawing.Point(8, 215);
             this.conLabalPanel.Name = "conLabalPanel";
-            this.conLabalPanel.Size = new System.Drawing.Size(108, 64);
+            this.conLabalPanel.Size = new System.Drawing.Size(93, 55);
             this.conLabalPanel.TabIndex = 25;
             // 
             // wisLabalPanel
             // 
             this.wisLabalPanel.Controls.Add(this.wisIntLabel);
             this.wisLabalPanel.Controls.Add(this.wisModLabel);
-            this.wisLabalPanel.Location = new System.Drawing.Point(9, 452);
+            this.wisLabalPanel.Location = new System.Drawing.Point(8, 392);
             this.wisLabalPanel.Name = "wisLabalPanel";
-            this.wisLabalPanel.Size = new System.Drawing.Size(108, 64);
+            this.wisLabalPanel.Size = new System.Drawing.Size(93, 55);
             this.wisLabalPanel.TabIndex = 26;
             // 
             // intLabalPanel
             // 
             this.intLabalPanel.Controls.Add(this.intIntLabel);
             this.intLabalPanel.Controls.Add(this.intModLabel);
-            this.intLabalPanel.Location = new System.Drawing.Point(9, 350);
+            this.intLabalPanel.Location = new System.Drawing.Point(8, 303);
             this.intLabalPanel.Name = "intLabalPanel";
-            this.intLabalPanel.Size = new System.Drawing.Size(108, 64);
+            this.intLabalPanel.Size = new System.Drawing.Size(93, 55);
             this.intLabalPanel.TabIndex = 26;
             // 
             // chaLabalPanel
             // 
             this.chaLabalPanel.Controls.Add(this.chaIntLabel);
             this.chaLabalPanel.Controls.Add(this.chaModLabel);
-            this.chaLabalPanel.Location = new System.Drawing.Point(9, 554);
+            this.chaLabalPanel.Location = new System.Drawing.Point(8, 480);
             this.chaLabalPanel.Name = "chaLabalPanel";
-            this.chaLabalPanel.Size = new System.Drawing.Size(108, 64);
+            this.chaLabalPanel.Size = new System.Drawing.Size(93, 55);
             this.chaLabalPanel.TabIndex = 26;
             // 
             // CharactergenForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 651);
+            this.ClientSize = new System.Drawing.Size(830, 564);
             this.Controls.Add(this.intLabalPanel);
             this.Controls.Add(this.chaLabalPanel);
             this.Controls.Add(this.wisLabalPanel);
