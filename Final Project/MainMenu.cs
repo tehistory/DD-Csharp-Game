@@ -33,7 +33,7 @@ namespace DnDGame
         {
             this.Visible = false;
 
-            GatheringForm form = new GatheringForm();
+            GatheringForm form = new GatheringForm(this);
             form.ShowDialog();
         }
 
@@ -59,6 +59,11 @@ namespace DnDGame
 
             MessageBox.Show("Save Complete", "Success", MessageBoxButtons.OK);
 
+        }
+
+        public static implicit operator Button(MainMenu v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

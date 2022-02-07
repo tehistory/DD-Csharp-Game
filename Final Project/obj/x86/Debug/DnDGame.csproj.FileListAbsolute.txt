@@ -27,3 +27,17 @@ E:\GitVault\DnD-Csharp-Game\Final Project\obj\x86\Debug\WindowsApplication.exe
 E:\GitVault\DnD-Csharp-Game\Final Project\obj\x86\Debug\WindowsApplication.pdb
 C:\Users\brian\OneDrive\Desktop\Class Project\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.CraftingForm.resources
 E:\GitVault\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.CraftingForm.resources
+D:\DnD-Csharp-Game\Final Project\bin\Debug\WindowsApplication.exe.config
+D:\DnD-Csharp-Game\Final Project\bin\Debug\WindowsApplication.exe
+D:\DnD-Csharp-Game\Final Project\bin\Debug\WindowsApplication.pdb
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.csproj.AssemblyReference.cache
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.CharactergenForm.resources
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.CombatForm.resources
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.CraftingForm.resources
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.GatheringForm.resources
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.MainMenu.resources
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.Properties.Resources.resources
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.csproj.GenerateResource.cache
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.csproj.CoreCompileInputs.cache
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\WindowsApplication.exe
+D:\DnD-Csharp-Game\Final Project\obj\x86\Debug\WindowsApplication.pdb
