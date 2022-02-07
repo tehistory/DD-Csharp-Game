@@ -111,6 +111,9 @@
     <EmbeddedResource Include="CombatForm.resx">
       <DependentUpon>CombatForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CraftingForm.resx">
+      <DependentUpon>CraftingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gathering.resx">
       <DependentUpon>Gathering.cs</DependentUpon>
     </EmbeddedResource>

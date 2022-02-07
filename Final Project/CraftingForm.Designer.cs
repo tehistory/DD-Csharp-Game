@@ -43,6 +43,7 @@ namespace DnDGame
             this.txtItemCraftDescription = new System.Windows.Forms.TextBox();
             this.txtGameNarrative = new System.Windows.Forms.TextBox();
             this.txtRequiredReagents = new System.Windows.Forms.TextBox();
+            this.btnHome = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,9 +148,9 @@ namespace DnDGame
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.listInventoryWeapons);
             this.groupBox1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(658, 12);
+            this.groupBox1.Location = new System.Drawing.Point(658, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(357, 422);
+            this.groupBox1.Size = new System.Drawing.Size(357, 425);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inventory";
@@ -198,11 +199,23 @@ namespace DnDGame
             this.txtRequiredReagents.TabIndex = 16;
             this.txtRequiredReagents.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Form1
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(12, 440);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(472, 30);
+            this.btnHome.TabIndex = 17;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // CraftingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 443);
+            this.ClientSize = new System.Drawing.Size(1025, 477);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.txtRequiredReagents);
             this.Controls.Add(this.txtGameNarrative);
             this.Controls.Add(this.txtItemCraftDescription);
@@ -239,5 +252,6 @@ namespace DnDGame
         private System.Windows.Forms.TextBox txtItemCraftDescription;
         private System.Windows.Forms.TextBox txtGameNarrative;
         private System.Windows.Forms.TextBox txtRequiredReagents;
+        private System.Windows.Forms.Button btnHome;
     }
 }
