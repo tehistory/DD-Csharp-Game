@@ -26,3 +26,4 @@ E:\GitVault\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.csproj.CoreCompi
 E:\GitVault\DnD-Csharp-Game\Final Project\obj\x86\Debug\WindowsApplication.exe
 E:\GitVault\DnD-Csharp-Game\Final Project\obj\x86\Debug\WindowsApplication.pdb
 C:\Users\brian\OneDrive\Desktop\Class Project\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.CraftingForm.resources
+E:\GitVault\DnD-Csharp-Game\Final Project\obj\x86\Debug\DnDGame.CraftingForm.resources

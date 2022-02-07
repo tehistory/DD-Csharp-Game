@@ -198,6 +198,7 @@ namespace DnDGame
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 1106);
+            this.ControlBox = false;
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBoxStart);
@@ -212,7 +213,6 @@ namespace DnDGame
             this.Controls.Add(this.pictureBoxElf);
             this.Name = "CombatForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.CombatForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoblin)).EndInit();

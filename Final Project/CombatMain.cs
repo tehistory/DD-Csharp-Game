@@ -14,15 +14,21 @@ namespace DnDGame
 
         public string mobName;
 
+        public int playerDex = 10;
+        public int playerStrength = 10;
         int playerHealth = 100;
         int mobHealth = 100;
-        int weaponDamage;
+        public int weaponDamage;
+        public string weaponName;
 
-        public CombatMain(int difficulty, CombatForm form1)
+        public CombatMain(int difficulty, CombatForm form1, MainMenu menu)
         {
             Random rng = new Random();
 
             mobName = monsterNames[rng.Next(0, 3)];
+            playerHealth = menu.character.HitPoints*10;
+            playerDex = menu.character.Dexterity;
+            playerStrength = menu.character.Strength;
 
             CombatForm myForm = form1;
 
@@ -31,6 +37,7 @@ namespace DnDGame
                 if (item.Name.ToString() == myForm.listBox1.SelectedItem.ToString())
                 {
                     weaponDamage = item.Damage;
+                    weaponName = item.Name;
                 }
             }
 
@@ -58,8 +65,9 @@ namespace DnDGame
 
             string output1 = "Your initiative is higher and you attack first.\n";
             string output2 = "Your initiative is lower and the monster attacks first.\n";
-            int die = Roll(0, 2);
-            if (die < 1)
+            int die = Roll(1, 5);
+            die *= menu.character.Perception;
+            if (die > 25)
             {
                 myForm.MainTextBox.AppendText(output1);
 
@@ -89,7 +97,8 @@ namespace DnDGame
         public void defendMethod(CombatForm myForm)
         {
             int res = Roll(0, 9);
-            if (res < 3)
+            res *= playerDex;
+            if (res < 30)
             {
                 myForm.Update();
                 Thread.Sleep(1000);
@@ -97,24 +106,25 @@ namespace DnDGame
                 myForm.Update();
                 Thread.Sleep(1000);
                 int die = Roll(0, 9);
-                if (die < 3)
+                die *= playerDex;
+                if (die < 30)
                 {
-                    int damage = damageRoll(1, weaponDamage);
-                    myForm.MainTextBox.AppendText("The blow lands and does " + damage + " to you.\n");
+                    int damage = Roll(15, 25);
+                    myForm.MainTextBox.AppendText("The blow lands and does " + damage + " damage to you.\n");
                     ChangeHealth(0, false, damage);
                 }
-                else if (die >= 3 && die <= 6)
+                else if (die >= 30 && die <= 60)
                 {
                     myForm.MainTextBox.AppendText("You manage to block the " + mobName + "'s attack.\n");
                 }
                 else
                 {
-                    int damage = Roll(5, 15);
+                    int damage = damageRoll(3, weaponDamage, playerStrength);
                     myForm.MainTextBox.AppendText("You successfully countered the " + mobName + "'s attack and did " + damage + " damage to the " + mobName + ".\n");
                     ChangeHealth(1, false, damage);
                 }
             }
-            else if (res >= 3 && res <= 6)
+            else if (res >= 30 && res <= 60)
             {
                 myForm.Update();
                 Thread.Sleep(1000);
@@ -122,19 +132,20 @@ namespace DnDGame
                 myForm.Update();
                 Thread.Sleep(1000);
                 int die = Roll(0, 9);
-                if (die < 3)
+                die *= playerDex;
+                if (die < 30)
                 {
-                    int damage = damageRoll(2, weaponDamage);
-                    myForm.MainTextBox.AppendText("The blow lands and does " + damage + " to you.\n");
+                    int damage = Roll(10, 20);
+                    myForm.MainTextBox.AppendText("The blow lands and does " + damage + " damage to you.\n");
                     ChangeHealth(0, false, damage);
                 }
-                else if (die >= 3 && die <= 6)
+                else if (die >= 30 && die <= 60)
                 {
                     myForm.MainTextBox.AppendText("You manage to block the " + mobName + "'s attack.\n");
                 }
                 else
                 {
-                    int damage = Roll(5, 15);
+                    int damage = damageRoll(3, weaponDamage, playerStrength);
                     myForm.MainTextBox.AppendText("You successfully countered the " + mobName + "'s attack and did " + damage + " damage to the " + mobName + ".\n");
                     ChangeHealth(1, false, damage);
                 }
@@ -147,19 +158,20 @@ namespace DnDGame
                 myForm.Update();
                 Thread.Sleep(1000);
                 int die = Roll(0, 9);
-                if (die < 3)
+                die *= playerDex;
+                if (die < 30)
                 {
-                    int damage = damageRoll(3, weaponDamage);
-                    myForm.MainTextBox.AppendText("The blow lands and does " + damage + " to you.\n");
+                    int damage = Roll(5, 15);
+                    myForm.MainTextBox.AppendText("The blow lands and does " + damage + " damage to you.\n");
                     ChangeHealth(0, false, damage);
                 }
-                else if (die >= 3 && die <= 6)
+                else if (die >= 30 && die <= 60)
                 {
                     myForm.MainTextBox.AppendText("You manage to block the " + mobName + "'s attack.\n");
                 }
                 else
                 {
-                    int damage = Roll(5, 15);
+                    int damage = damageRoll(3, weaponDamage, playerStrength);
                     myForm.MainTextBox.AppendText("You successfully countered the " + mobName + "'s attack and did " + damage + " damage to the " + mobName + ".\n");
                     ChangeHealth(1, false, damage);
                 }
@@ -197,19 +209,22 @@ namespace DnDGame
             myForm.Update();
         }
 
-        public static int damageRoll(int attack, int weaponDmg)
+        public static int damageRoll(int attack, int weaponDmg, int strength)
         { 
             if(attack == 1)
             {
-                return Roll(weaponDmg - 5, weaponDmg + 5);
+                double damage = strength + Roll(weaponDmg - 5, weaponDmg + 5);
+                return Convert.ToInt32(damage);
             }
             else if(attack == 2)
             {
-                return Roll(weaponDmg - 10, weaponDmg);
+                double damage = strength + Roll(weaponDmg - 10, weaponDmg);
+                return Convert.ToInt32(damage);
             }
             else
             {
-                return Roll(weaponDmg - 15, weaponDmg - 10);
+                double damage = strength + Roll(weaponDmg - 15, weaponDmg - 10);
+                return Convert.ToInt32(damage);
             }
         }
 
@@ -218,8 +233,12 @@ namespace DnDGame
         {
             //return random int for now, will implement skill checks later
             Random rollRan = new Random();
-
-            return rollRan.Next(min, max);
+            int roll = rollRan.Next(min, max);
+            if(roll < 0)
+            {
+                Math.Abs(roll);
+            }
+            return roll;
         }
 
         public bool CheckHealth()
@@ -275,6 +294,9 @@ namespace DnDGame
             else
             {
                 myForm.MainTextBox.AppendText("You fall to the ground as your vision fades to black. . .\n");
+                myForm.Update();
+                myForm.button4.Text = "Leave";
+                myForm.button4.Visible = true;
                 myForm.Update();
             }
         }
