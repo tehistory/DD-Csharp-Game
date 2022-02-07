@@ -130,8 +130,8 @@ namespace DnDGame
             menu.character = heroPlayer;
             this.Update();
             menu.Visible = true;
+            menu.checkCharacter();
             this.Close();
-
         }
     }
 }
