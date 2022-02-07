@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/Final Project/obj/Release/DDCombatSystem.csproj.AssemblyReference.cache
+/Final Project/obj/x86/Release/.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
