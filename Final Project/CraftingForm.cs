@@ -10,12 +10,15 @@ using System.Windows.Forms;
 
 
 namespace DnDGame
-{
+{    
     public partial class CraftingForm : Form
     {
-        public CraftingForm()
+        MainMenu menu;
+        public CraftingForm(MainMenu main)
         {
             InitializeComponent();
+
+            menu = main;
 
             for (int i = 0; i < WFRpg.weaponsList.Count; i++)
             {
@@ -414,6 +417,13 @@ namespace DnDGame
             }
 
             return hasAll;
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            menu.Visible = true;
+
+            this.Close();
         }
     }
 }

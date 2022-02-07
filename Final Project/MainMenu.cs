@@ -50,7 +50,7 @@ namespace DnDGame
         {
             this.Visible = false;
 
-            CraftingForm form = new CraftingForm();
+            CraftingForm form = new CraftingForm(this);
             form.ShowDialog();
         }
 
