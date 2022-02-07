@@ -13,11 +13,15 @@ namespace DnDGame
 {
     public partial class MainMenu : Form
     {
-        public Character character = new Character();
+        public Character character;
 
         public MainMenu()
         {
             InitializeComponent();
+
+            Gathering.Enabled = false;
+            Looting.Enabled = false;
+            Crafting.Enabled = false;
         }
 
         private void CharacterBuilder_Click(object sender, EventArgs e)
@@ -64,6 +68,16 @@ namespace DnDGame
         public static implicit operator Button(MainMenu v)
         {
             throw new NotImplementedException();
+        }
+
+        public void checkCharacter()
+        {
+            if(!(character == null))
+            {
+                Gathering.Enabled = true;
+                Looting.Enabled = true;
+                Crafting.Enabled = true;
+            }
         }
     }
 }
