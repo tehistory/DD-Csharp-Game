@@ -84,18 +84,19 @@ namespace DnDGame
             this.infoLog.TabIndex = 3;
             this.infoLog.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // Form1
+            // GatheringForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 512);
+            this.ControlBox = false;
             this.Controls.Add(this.infoLog);
             this.Controls.Add(this.startGathering);
             this.Controls.Add(this.cbGatheringSelect);
             this.Controls.Add(this.pbGatheringImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "GatheringForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbGatheringImage)).EndInit();
