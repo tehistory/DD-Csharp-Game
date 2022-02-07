@@ -14,10 +14,13 @@ namespace DnDGame
 
     public partial class CharactergenForm : Form
     {
+        MainMenu menu;
         Character heroPlayer = new Character();
-        public CharactergenForm()
+        public CharactergenForm(MainMenu main)
         {
             InitializeComponent();
+
+            menu = main;
 
         }
 
@@ -118,6 +121,17 @@ namespace DnDGame
         {
             Character heroPlayer = new Character();
             return heroPlayer;
+        }
+
+
+        private void returnHomeButton_Click_1(object sender, EventArgs e)
+        {
+
+            menu.character = heroPlayer;
+            this.Update();
+            menu.Visible = true;
+            this.Close();
+
         }
     }
 }

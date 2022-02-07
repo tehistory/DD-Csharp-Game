@@ -3,6 +3,7 @@ namespace DnDGame
 {
     partial class CharactergenForm
     {
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -57,6 +58,7 @@ namespace DnDGame
             this.wisLabalPanel = new System.Windows.Forms.Panel();
             this.intLabalPanel = new System.Windows.Forms.Panel();
             this.chaLabalPanel = new System.Windows.Forms.Panel();
+            this.returnHomeButton = new System.Windows.Forms.Button();
             this.strLabalPanel.SuspendLayout();
             this.dexLabalPanel.SuspendLayout();
             this.conLabalPanel.SuspendLayout();
@@ -331,11 +333,24 @@ namespace DnDGame
             this.chaLabalPanel.Size = new System.Drawing.Size(93, 55);
             this.chaLabalPanel.TabIndex = 26;
             // 
+            // returnHomeButton
+            // 
+            this.returnHomeButton.Font = new System.Drawing.Font("Arial Narrow", 18F);
+            this.returnHomeButton.Location = new System.Drawing.Point(633, 380);
+            this.returnHomeButton.Name = "returnHomeButton";
+            this.returnHomeButton.Size = new System.Drawing.Size(132, 65);
+            this.returnHomeButton.TabIndex = 27;
+            this.returnHomeButton.Text = "Home";
+            this.returnHomeButton.UseVisualStyleBackColor = true;
+            this.returnHomeButton.Click += new System.EventHandler(this.returnHomeButton_Click_1);
+            // 
             // CharactergenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 564);
+            this.ControlBox = false;
+            this.Controls.Add(this.returnHomeButton);
             this.Controls.Add(this.intLabalPanel);
             this.Controls.Add(this.chaLabalPanel);
             this.Controls.Add(this.wisLabalPanel);
@@ -402,6 +417,7 @@ namespace DnDGame
         private System.Windows.Forms.Panel wisLabalPanel;
         private System.Windows.Forms.Panel intLabalPanel;
         private System.Windows.Forms.Panel chaLabalPanel;
+        private System.Windows.Forms.Button returnHomeButton;
     }
 }
 

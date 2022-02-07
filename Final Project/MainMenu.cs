@@ -24,7 +24,7 @@ namespace DnDGame
         {
             this.Visible = false;
 
-            CharactergenForm form = new CharactergenForm();
+            CharactergenForm form = new CharactergenForm(this);
             
             form.ShowDialog();
         }
