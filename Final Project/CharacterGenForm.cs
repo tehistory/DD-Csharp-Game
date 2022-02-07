@@ -74,8 +74,8 @@ namespace DnDGame
         public static void SaveCharacter(Character savePlayer)
         {
 
-            File.Delete(@"..\..\..\character_list.csv");
-            StreamWriter cWriter = new StreamWriter(File.OpenWrite(@"..\..\..\character_list.csv"));
+            File.Delete(@"..\..\character_list.csv");
+            StreamWriter cWriter = new StreamWriter(File.OpenWrite(@"..\..\character_list.csv"));
 
             cWriter.WriteLine(savePlayer.CharName + "," + savePlayer.Background + "," + savePlayer.Profession + "," + savePlayer.HitPoints + "," + savePlayer.Strength + "," + savePlayer.Dexterity + "," + savePlayer.Constitution + "," + savePlayer.Intelligence + "," + savePlayer.Wisdom + "," + savePlayer.Charisma + "," + savePlayer.Acrobatics + "," + savePlayer.AnimalHandling + "," + savePlayer.Arcana + "," + savePlayer.Athletics + "," + savePlayer.Deception + "," + savePlayer.History + "," + savePlayer.Insight + "," + savePlayer.Intimidation + "," + savePlayer.Medicine + "," + savePlayer.Nature + "," + savePlayer.Perception + "," + savePlayer.Performance + "," + savePlayer.Persuasion + "," + savePlayer.Religon + "," + savePlayer.SlightOfHand + "," + savePlayer.Stealth + "," + savePlayer.Survival);
             cWriter.Flush();
@@ -83,7 +83,7 @@ namespace DnDGame
         }
         public Character LoadCharacter()
         {
-            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\..\character_list.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\character_list.csv"));
             string line = reader.ReadLine();
             string[] values = line.Split(',');
             Character loadplayer = new Character(values[0], values[1], values[2], Convert.ToInt32(values[3]), Convert.ToInt32(values[4]), Convert.ToInt32(values[5]), Convert.ToInt32(values[6]), Convert.ToInt32(values[7]), Convert.ToInt32(values[8]), Convert.ToInt32(values[9]), Convert.ToInt32(values[10]), Convert.ToInt32(values[11]), Convert.ToInt32(values[12]), Convert.ToInt32(values[13]), Convert.ToInt32(values[14]), Convert.ToInt32(values[15]), Convert.ToInt32(values[16]), Convert.ToInt32(values[17]), Convert.ToInt32(values[18]), Convert.ToInt32(values[19]), Convert.ToInt32(values[20]), Convert.ToInt32(values[21]), Convert.ToInt32(values[22]), Convert.ToInt32(values[23]), Convert.ToInt32(values[24]), Convert.ToInt32(values[25]), Convert.ToInt32(values[26]));

@@ -18,7 +18,7 @@ namespace DnDGame
         public static void LoadWeapons()
         {
             // This will read file from csv
-            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\..\SwordList.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\SwordList.csv"));
 
             while (!reader.EndOfStream)
             {
@@ -37,7 +37,7 @@ namespace DnDGame
         public static void LoadInventoryWeapons()
         {
             // This will read file from csv
-            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\..\Inventory\Inventory_weapon.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\Inventory\Inventory_weapon.csv"));
 
             while (!reader.EndOfStream)
             {
@@ -56,7 +56,7 @@ namespace DnDGame
         public static void LoadInventoryReagents()
         {
             // This will read file from csv
-            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\..\Inventory\Inventory_reagent.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\Inventory\Inventory_reagent.csv"));
 
             while (!reader.EndOfStream)
             {
@@ -75,7 +75,7 @@ namespace DnDGame
         public static void LoadWeaponCraftRequirements()
         {
             // This will read file from csv
-            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\..\CraftRequirements\SwordCraftRequirements.csv"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\CraftRequirements\SwordCraftRequirements.csv"));
 
             while (!reader.EndOfStream)
             {
@@ -107,7 +107,7 @@ namespace DnDGame
 
         public static void LoadGold()
         {
-            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\..\Inventory\Inventory_gold.txt"));
+            StreamReader reader = new StreamReader(File.OpenRead(@"..\..\Inventory\Inventory_gold.txt"));
 
             string line = reader.ReadLine();
 
@@ -120,8 +120,8 @@ namespace DnDGame
 
         public static void SaveGame()
         {
-            File.Delete(@"..\Inventory\Inventory_weapon.csv");
-            StreamWriter wWriter = new StreamWriter(File.OpenWrite(@"..\..\..\Inventory\Inventory_weapon.csv"));
+            File.Delete(@"..\..\Inventory\Inventory_weapon.csv");
+            StreamWriter wWriter = new StreamWriter(File.OpenWrite(@"..\..\Inventory\Inventory_weapon.csv"));
             
             for(int i = 0; i < inventoryWeaponsList.Count; i++)
             {
@@ -132,8 +132,8 @@ namespace DnDGame
             wWriter.Flush();
             wWriter.Close();
 
-            File.Delete(@"..\Inventory\Inventory_reagent.csv");
-            StreamWriter iWriter = new StreamWriter(File.OpenWrite(@"..\..\..\Inventory\Inventory_reagent.csv"));
+            File.Delete(@"..\..\Inventory\Inventory_reagent.csv");
+            StreamWriter iWriter = new StreamWriter(File.OpenWrite(@"..\..\Inventory\Inventory_reagent.csv"));
 
             for (int i = 0; i < inventoryReagentsList.Count; i++)
             {
@@ -144,8 +144,8 @@ namespace DnDGame
             iWriter.Flush();
             iWriter.Close();
 
-            File.Delete(@"..\Inventory\Inventory_gold.txt");
-            StreamWriter gWriter = new StreamWriter(File.OpenWrite(@"..\..\..\Inventory\Inventory_gold.txt"));
+            File.Delete(@"..\..\Inventory\Inventory_gold.txt");
+            StreamWriter gWriter = new StreamWriter(File.OpenWrite(@"..\..\Inventory\Inventory_gold.txt"));
 
             gWriter.WriteLine(gold);
 
