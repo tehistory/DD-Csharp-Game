@@ -39,23 +39,23 @@ namespace DnDGame
             switch (area)
             {
                 case 0:
-                    pbGatheringImage.Image = Image.FromFile(@"C:\Users\cchap\source\repos\GatheringApp\GatheringApp\img\Forest.jpg");
+                    pbGatheringImage.Image = Image.FromFile(@"..\..\img\Forest.jpg");
                     currentArea = "Forest";
                     break;
                 case 1:
-                    pbGatheringImage.Image = Image.FromFile(@"C:\Users\cchap\source\repos\GatheringApp\GatheringApp\img\Desert.png");
+                    pbGatheringImage.Image = Image.FromFile(@"..\..\img\Desert.png");
                     currentArea = "Desert";
                     break;
                 case 2:
-                    pbGatheringImage.Image = Image.FromFile(@"C:\Users\cchap\source\repos\GatheringApp\GatheringApp\img\Grasslands.jpg");
+                    pbGatheringImage.Image = Image.FromFile(@"..\..\img\Grasslands.jpg");
                     currentArea = "Grasslands";
                     break;
                 case 3:
-                    pbGatheringImage.Image = Image.FromFile(@"C:\Users\cchap\source\repos\GatheringApp\GatheringApp\img\Marsh.jpg");
+                    pbGatheringImage.Image = Image.FromFile(@"..\..\img\Marsh.jpg");
                     currentArea = "Marsh";
                     break;
                 case 4:
-                    pbGatheringImage.Image = Image.FromFile(@"C:\Users\cchap\source\repos\GatheringApp\GatheringApp\img\Mountain.jpg");
+                    pbGatheringImage.Image = Image.FromFile(@"..\..\img\Mountain.jpg");
                     currentArea = "Mountain";
                     break;
                 

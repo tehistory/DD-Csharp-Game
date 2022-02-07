@@ -343,9 +343,9 @@ namespace DnDGame
 
                 gold = gold - requiredGold;
 
-                File.WriteAllText(@"..\..\..\Inventory\Inventory_gold.txt", gold.ToString());
+                File.WriteAllText(@"..\..\Inventory\Inventory_gold.txt", gold.ToString());
 
-                StreamReader reader = new StreamReader(File.OpenRead(@"..\..\..\Inventory\Inventory_gold.txt"));
+                StreamReader reader = new StreamReader(File.OpenRead(@"..\..\Inventory\Inventory_gold.txt"));
 
                 string line = reader.ReadLine();
 
