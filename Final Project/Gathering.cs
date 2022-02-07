@@ -12,9 +12,13 @@ namespace DnDGame
 {
     public partial class GatheringForm : Form
     {
-        public GatheringForm()
+
+        MainMenu Home;
+        public GatheringForm(MainMenu main)
         {
             InitializeComponent();
+            
+            Home = main;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -24,7 +28,7 @@ namespace DnDGame
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+           
 
         }
         //Logic to set gathering area
@@ -339,6 +343,12 @@ public int D100DiceRoll()
             
         }
 
-       
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Update();
+            Home.Visible = true;
+            this.Close();
+            
+        }
     }
 }

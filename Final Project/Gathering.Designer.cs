@@ -33,6 +33,7 @@ namespace DnDGame
             this.cbGatheringSelect = new System.Windows.Forms.ComboBox();
             this.startGathering = new System.Windows.Forms.Button();
             this.infoLog = new System.Windows.Forms.TextBox();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbGatheringImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@ namespace DnDGame
             // 
             // startGathering
             // 
-            this.startGathering.Location = new System.Drawing.Point(12, 398);
+            this.startGathering.Location = new System.Drawing.Point(12, 354);
             this.startGathering.Name = "startGathering";
             this.startGathering.Size = new System.Drawing.Size(88, 23);
             this.startGathering.TabIndex = 2;
@@ -84,18 +85,29 @@ namespace DnDGame
             this.infoLog.TabIndex = 3;
             this.infoLog.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // Form1
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(12, 441);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(88, 23);
+            this.btnHome.TabIndex = 4;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // GatheringForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 512);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.infoLog);
             this.Controls.Add(this.startGathering);
             this.Controls.Add(this.cbGatheringSelect);
             this.Controls.Add(this.pbGatheringImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "GatheringForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbGatheringImage)).EndInit();
@@ -109,6 +121,7 @@ namespace DnDGame
         private System.Windows.Forms.ComboBox cbGatheringSelect;
         private System.Windows.Forms.Button startGathering;
         private System.Windows.Forms.TextBox infoLog;
+        private System.Windows.Forms.Button btnHome;
     }
 }
 
