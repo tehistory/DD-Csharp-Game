@@ -45,8 +45,10 @@ namespace DnDGame
             button4.Visible = false;
             button5.Visible = false;
             listBox1.Visible = false;
-            run1 = new CombatMain(1, this);
+            run1 = new CombatMain(1, this, menu);
             monstName = run1.mobName;
+            weaponDamage = run1.weaponDamage;
+            weapon = run1.weaponName;
         }
         public void Button1_Click(object sender, EventArgs e)
         {
@@ -114,30 +116,31 @@ namespace DnDGame
         {
             this.Update();
             Thread.Sleep(1000);
-            int res = CombatMain.Roll(0,2);
-            if(res >= 0 && res < 1)
+            int res = CombatMain.Roll(0,9);
+            res *= run1.playerDex;
+            if(res >= 60)
             {
                 MainTextBox.AppendText("You strike true and do ");
                 if (buttonResult == 1)
                 {
-                    int damage = CombatMain.damageRoll(1, weaponDamage);
+                    int damage = CombatMain.damageRoll(1, weaponDamage, run1.playerStrength);
                     MainTextBox.AppendText(damage + " damage.\n");
                     run1.ChangeHealth(1, false, damage);
                 }
                 else if (buttonResult == 2)
                 {
-                    int damage = CombatMain.damageRoll(2, weaponDamage);
+                    int damage = CombatMain.damageRoll(2, weaponDamage, run1.playerStrength);
                     MainTextBox.AppendText(damage + " damage.\n");
                     run1.ChangeHealth(1, false, damage);
                 }
                 else if(buttonResult == 3)
                 {
-                    int damage = CombatMain.damageRoll(3, weaponDamage);
+                    int damage = CombatMain.damageRoll(3, weaponDamage, run1.playerStrength);
                     MainTextBox.AppendText(damage + " damage.\n");
                     run1.ChangeHealth(1, false, damage);
                 }
             }
-            else if (res >= 1 && res < 2)
+            else if (res >= 30 && res < 60)
             {
                 MainTextBox.AppendText("Your attack is blocked and does nothing!\n");
             }
@@ -165,11 +168,6 @@ namespace DnDGame
             button5.Visible = true;
         }
 
-        private void CombatForm_Load(object sender, EventArgs e)
-        {
-            menu.Visible = true;
-
-            this.Close();
-        }
+        
     }
 }

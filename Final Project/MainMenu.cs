@@ -13,6 +13,8 @@ namespace DnDGame
 {
     public partial class MainMenu : Form
     {
+        public Character character = new Character();
+
         public MainMenu()
         {
             InitializeComponent();
@@ -20,14 +22,11 @@ namespace DnDGame
 
         private void CharacterBuilder_Click(object sender, EventArgs e)
         {
-            //this.Close();
             this.Visible = false;
 
             CharactergenForm form = new CharactergenForm();
-            //indowInteropHelper wih = new WindowInteropHelper(this);
-            //wih.Owner = form.Handle;
+            
             form.ShowDialog();
-            //Application.Run(new CharactergenForm());
         }
 
         private void Gathering_Click(object sender, EventArgs e)
